@@ -1,0 +1,80 @@
+body {
+    margin: 1;
+    font-family: monospace;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    padding: 10px;
+    color: yellow;
+    background-image: url(./images/moon.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .container {
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+
+  #logo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+  
+  #logo img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  #characters-images-container {
+    margin: 2rem;
+  }
+  #characters-images-container img {
+    height: 6rem;
+    width: auto;
+    display: flex;
+  }
+  .log-form {
+             padding: 30px;
+             width: 300px ;
+             display: flex;
+             flex-direction: column;
+  }
+  /* #characters-images-container {
+    text-align: center;
+    border: grey solid 1px;
+    padding: 1rem;
+    width: 15rem;
+    height: 23rem;
+    display: inline-flexbox;
+    margin: 1rem 2rem;
+    box-shadow: 3px 4px #e04b52 
+} */
+  button {
+    position: relative;
+    background-color: lightseagreen;
+    border: none;
+    border-radius: 5px;
+    height: 1rem;
+    width: max-content;
+    color: whitesmoke;
+    font-size: 14px;
+    justify-self: center;
+  }
+  button:hover {
+    background-color: whitesmoke;
+    border: #e04b52 solid 1px;
+    color: #e04b52;
+  }
+  .header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 2em;
+  }
