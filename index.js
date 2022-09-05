@@ -4,33 +4,28 @@ document.addEventListener("DOMContentLoaded",  function (){
     const hogwartStaffUrl='http://hp-api.herokuapp.com/api/characters/staff'
     const ul = document.getElementById('staff-list')
     const studentList = document.getElementById("student-list")
-    const userCardContainer= document.getElementById("all-characters")
     const card=document.getElementById("characters-container")
     const house=document.getElementById("houses")
-
-    let users=[]
 
     // fetching all the characters
     fetch(characterUrl)
     .then(response => response.json())
     .then(data=>{data.forEach(user =>user.image=renderImages(user))})
     function renderImages(user){
-        const li=document.createElement("li")
-        li.innerText= user.name
-        card.append(li)
-        const image=document.createElement('img')
-        image.src= user.image
-        card.append(image)
-        card.style.display="none"
-        const characterBtn= document.getElementById('characters')
-        characterBtn.addEventListener("click", handleChar)
-      }
-    function handleChar(){
-        if(card.style.display=="none"){
-            card.style.display=="block"
-        }else{
-            card.style.display=="none"
-        }
+
+        // const searchBtn=document.getElementById('search-button').addEventListener("click", ()=>{
+        //     let search= document.getElementById("user-input").value
+            // if(user.name===search){
+                const li=document.createElement("li")
+                li.innerText= user.name
+                card.style.display="none"
+                const image=document.createElement('img')
+                image.src= user.image
+                card.append(image)
+                card.append(li)
+                console.log(card)
+    //         }else{console.log("error")}
+    //     })
     }
     
     // characters who are hogwart staff
@@ -73,11 +68,13 @@ document.addEventListener("DOMContentLoaded",  function (){
         studentBtn.addEventListener("click", handleStudent)
     }
     // hide and seek with the student button
+    let list= true
     function handleStudent(){
-        if(studentList.style.display=="none"){
-            studentList.style.display="block"
-        }else{
+        list=!list
+        if(list){
             studentList.style.display="none"
+        }else{
+            studentList.style.display="block"
         }
      }
     //  all houses
@@ -90,17 +87,22 @@ document.addEventListener("DOMContentLoaded",  function (){
         const li=document.createElement("li")
         li.innerText = detail.house
         house.append(li)
+        house.style.display="none"
         const drop = document.getElementById("house-dropdown") 
         drop.addEventListener("change", handleChange)
      }    
         
     function handleChange(e){
         let home= e.target.value
-           if(home===house){
-            return true
-           }else{return false}
-     newHomes=house.filter(handleChange)
-     li.innerText=""
+        let filteredHomes= house.filter(house=>house.startsWith(home))
+
+    //        if(home===house){
+    //         li.innerText=""
+    //         return true
+    //        }else{return false}
+
+    //  newHomes=house.filter(handleChange)
+    //  console.log(newHomes)
     }
 
     // validation code for inputs
