@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts - School of Wizards and Spells</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+   <div id= "heading">
+    <h1>WELCOME TO HOGWARTS<br><span>School of wizardry and magic</span></h1>
+    <hr>
+   </div> 
+   <div class="search-container">
+    <input class="input" type="search" placeholder="characters"id="user-input"/>
+    <button id="search-button" class="button">Search</button>
+  </div>
+    <div id = "description">
+      <p>Harry Potter is an English fantasy novel with a series of seven plays.
+        The novel surrounds a young wizard boy by the name of Harry Potter and his friends
+        Hermonie Granger and Ron Weasley whom are also wizards.They all study at Hogwarts School of
+        Witchcraft and wizardry.Them main is about Harry's struggle with Lord Voltamort,a dark wizard
+        who intends to be immortal and overthrow the Ministry of magic together with all wizards.</p>
+    </div>
+        <!-- all the characters images go here -->
+    <div id="names" class="card">
+      <button id= 'characters' type="click">charachters</button>
+      <div id="characters-container"></div>
+    </div>    
+       <!-- hogwart students -->
+    <div id="student-member">
+      <button id="student-click" type="click">students</button>
+      <div id="student-list"></div>
+    </div>
+       <!-- hogwart staffs -->
+    <div id="staff-members">
+      <button id ="staff-click" type="click">staff</button>
+      <div id ="staff-list"></div>
+    </div>
+       <!-- filtered house dropdown -->
+    <div id = houses>
+       <label id="house-charcters">Characters whose houses are:</label>
+       <select id="house-dropdown" name="select-house">
+         <option id="list-a" value="gryffindor">Gryffindor</option>
+         <option id="list-b" value="hufflepuff">Hufflepuff</option>
+         <option id="list-c" value="ravenclaw">Ravenclaw</option>
+         <option id="list-d" value="slytherin">Slytherin</option> 
+       </select>
+    </div>
+    <div id="allComments"></div>    
+         <!-- comment form -->
+       <form id="comment-form" class="comment-form">
+         <input type="text"name="comment"id="comment"placeholder="Write a comment..."/>
+         <input class="com" type="submit" value ='comment'/>
+       </form>
+   </div>   
+    <div id = list>
+          <h2> all comments</h2>
+          <ul id="comments"></ul>
+  </div>  
+</body>  
+</html>
