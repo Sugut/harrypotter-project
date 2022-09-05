@@ -1,80 +1,131 @@
 body {
     margin: 1;
-    font-family: monospace;
-    position: relative;
-    height: 100vh;
-    width: 100vw;
+    font-family: "Legendary Runes Free Trial";
+    src: url("/font/Legendary Runes Free Trial.otf");
+    position: absolute;
+    height: 80vh;
+    width: 90vw;
     padding: 10px;
-    color: yellow;
-    background-image: url(./images/moon.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    color: black;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #b162ff 4%, #00ffa5 100%);
+    /* background-image: url(./images/moon.jpg); */
+    /* background-repeat: no-repeat;
+    background-size: 50%; */
   }
   .container {
       display:flex;
       flex-direction: column;
       justify-content: space-between;
   }
+ #staff-list{
+  display: block;
+ }
 
-
-  #logo {
-    position: relative;
-    width: 50px;
-    height: 50px;
+  #staff-list.open{
+     display: none;
+  }
+  .com{
+    padding: 10px;
+    width: 100px ;
+    display: flex;
+    flex-direction: column;
   }
   
-  #logo img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-  }
-  #characters-images-container {
-    margin: 2rem;
-  }
-  #characters-images-container img {
-    height: 6rem;
-    width: auto;
+  #comment{
+    padding: 10px;
+    width: 150px ;
     display: flex;
+    flex-direction: column;
+  }
+  #comment-form{
+    padding: 10px;
+    width: 300px ;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #characters-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas:
+     "img img img img";
+  }
+  #characters-container img{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, ifr));
+    gap: 25 rem;
+    width:60%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
+  #characters-images-container h3{
+     align-content: center;
+
   }
   .log-form {
-             padding: 30px;
-             width: 300px ;
-             display: flex;
-             flex-direction: column;
+    padding: 10px;
+    width: 300px ;
+    display: flex;
+    flex-direction: column;
   }
-  /* #characters-images-container {
-    text-align: center;
-    border: grey solid 1px;
-    padding: 1rem;
-    width: 15rem;
-    height: 23rem;
-    display: inline-flexbox;
-    margin: 1rem 2rem;
-    box-shadow: 3px 4px #e04b52 
-} */
+
   button {
     position: relative;
-    background-color: lightseagreen;
+    background-color: blue;
     border: none;
     border-radius: 5px;
+    height: 1rem;
+    text-transform: uppercase;
+    width: max-content;
+    color: whitesmoke;
+    font-size: 14px;
+    justify-self: center;
+  }
+  button.hover{
+    color: black;
+  }
+
+  #staff-click {
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    
     height: 1rem;
     width: max-content;
     color: whitesmoke;
     font-size: 14px;
     justify-self: center;
   }
-  button:hover {
+  form {
     background-color: whitesmoke;
     border: #e04b52 solid 1px;
     color: #e04b52;
+    border-style: inset;
+    border-radius: 25px;
+    background: lightblue;
   }
-  .header {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0 2em;
-  }
+.cards h3 {
+  font-size: 1.1em;
+  text-align: center;
+}
+
+#descriprion{
+  text-align: right;
+}
+.search-container{
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+ }
+
+ input{
+  font-size: 1rem;
+ }
+ .hide{
+  display: none;
+ }
