@@ -1,28 +1,24 @@
 body {
-    margin: 1;
     font-family: "Legendary Runes Free Trial";
     src: url("/font/Legendary Runes Free Trial.otf");
-    position: absolute;
-    height: 80vh;
-    width: 90vw;
-    padding: 10px;
-    color: black;
-    background-image: linear-gradient(180deg, #FFFFFF 0%, #b162ff 4%, #00ffa5 100%);
-    /* background-image: url(./images/moon.jpg); */
-    /* background-repeat: no-repeat;
-    background-size: 50%; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    color: whitesmoke;
+    background-image: url("https://source.unsplash.com/1600x900/?moon");
   }
-  .container {
-      display:flex;
-      flex-direction: column;
-      justify-content: space-between;
-  }
- #staff-list{
-  display: block;
- }
-
-  #staff-list.open{
-     display: none;
+  #container {
+    border-radius: 56px 0px 56px 0px;
+    width: 800px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
   .com{
     padding: 10px;
@@ -75,57 +71,33 @@ body {
   }
 
   button {
-    position: relative;
     background-color: blue;
     border: none;
     border-radius: 5px;
-    height: 1rem;
     text-transform: uppercase;
-    width: max-content;
     color: whitesmoke;
-    font-size: 14px;
-    justify-self: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
   }
   button.hover{
     color: black;
-  }
-
-  #staff-click {
-    position: relative;
-    border: none;
-    border-radius: 5px;
-    
-    height: 1rem;
-    width: max-content;
-    color: whitesmoke;
-    font-size: 14px;
-    justify-self: center;
-  }
-  form {
-    background-color: whitesmoke;
-    border: #e04b52 solid 1px;
-    color: #e04b52;
-    border-style: inset;
-    border-radius: 25px;
-    background: lightblue;
   }
 .cards h3 {
   font-size: 1.1em;
   text-align: center;
 }
-
-#descriprion{
-  text-align: right;
+.input{
+  margin-left: 200px;
+  border-radius: 5px;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ }
+footer{
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
-.search-container{
-  display: flex;
-  flex-direction: column;
-  gap: .25rem;
- }
-
- input{
-  font-size: 1rem;
- }
- .hide{
-  display: none;
- }
