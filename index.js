@@ -4,29 +4,33 @@ document.addEventListener("DOMContentLoaded",  function (){
     const hogwartStaffUrl='http://hp-api.herokuapp.com/api/characters/staff'
     const ul = document.getElementById('staff-list')
     const studentList = document.getElementById("student-list")
-    const card=document.getElementById("characters-container")
-    const house=document.getElementById("houses")
+    const card=document.getElementById("characters-list")
 
     // fetching all the characters
     fetch(characterUrl)
     .then(response => response.json())
-    .then(data=>{data.forEach(user =>user.image=renderImages(user))})
+    .then(data=>{data.forEach(user => user.name = renderImages(user))})
     function renderImages(user){
-
-        // const searchBtn=document.getElementById('search-button').addEventListener("click", ()=>{
-        //     let search= document.getElementById("user-input").value
-            // if(user.name===search){
-                const li=document.createElement("li")
-                li.innerText= user.name
-                card.style.display="none"
-                const image=document.createElement('img')
-                image.src= user.image
-                card.append(image)
-                card.append(li)
-                console.log(card)
-    //         }else{console.log("error")}
-    //     })
-    }
+        const li=document.createElement("li")
+        li.innerText= user.name
+        const image=document.createElement('img')
+        image.src= user.image
+        card.append(image)
+        card.append(li)
+        card.style.display="none"
+        const charBtn= document.getElementById("character-click")
+        charBtn.addEventListener("click", handleCharacters)
+      }
+    //  hide and seek with character button
+    let charList = true
+    function handleCharacters(){
+        charList=!charList
+        if(charList){
+            card.style.display="none"
+        }else{
+            card.style.display="block"
+        }
+     }
     
     // characters who are hogwart staff
     fetch(hogwartStaffUrl)
@@ -38,7 +42,7 @@ document.addEventListener("DOMContentLoaded",  function (){
         const li= document.createElement("li")
         li.innerText= characterStaff.name
         ul.append(li)
-        ul.style.display="none"
+        ul.style.display = "none"
         const staffBtn= document.getElementById("staff-click")
         staffBtn.addEventListener("click",  handleClick)
     }
@@ -77,35 +81,6 @@ document.addEventListener("DOMContentLoaded",  function (){
             studentList.style.display="block"
         }
      }
-    //  all houses
-    fetch(characterUrl)
-    .then(response => response.json())
-    .then(data=>data.forEach(detail =>detail.house=renderHouse(detail)))
-    
-    // adding a change eventListener
-    function renderHouse(detail){
-        const li=document.createElement("li")
-        li.innerText = detail.house
-        house.append(li)
-        house.style.display="none"
-        const drop = document.getElementById("house-dropdown") 
-        drop.addEventListener("change", handleChange)
-     }    
-        
-    function handleChange(e){
-        let home= e.target.value
-        let filteredHomes= house.filter(house=>house.startsWith(home))
-
-    //        if(home===house){
-    //         li.innerText=""
-    //         return true
-    //        }else{return false}
-
-    //  newHomes=house.filter(handleChange)
-    //  console.log(newHomes)
-    }
-
-    // validation code for inputs
     
     // function to add comments with a submit eventListener
     const form = document.getElementById("comment-form")

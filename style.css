@@ -4,15 +4,14 @@ body {
     align-items: center;
     display: flex;
     justify-content: center;
-    height: 100vh;
-    color: whitesmoke;
+    height: 100%;
+    color: white;
     background-image: url("https://source.unsplash.com/1600x900/?moon");
-  }
-  #container {
+  } 
+   #container {
     border-radius: 56px 0px 56px 0px;
     width: 800px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -25,6 +24,7 @@ body {
     width: 100px ;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
   }
   
   #comment{
@@ -32,6 +32,7 @@ body {
     width: 150px ;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
   }
   #comment-form{
     padding: 10px;
@@ -40,7 +41,7 @@ body {
     flex-direction: column;
   }
 
-  #characters-container {
+  #characters-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -48,28 +49,14 @@ body {
     grid-template-areas:
      "img img img img";
   }
-  #characters-container img{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, ifr));
-    gap: 25 rem;
-    width:60%;
-    height: 150px;
+  #characters-list img{
+    width:30%;
+    height: 40%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     cursor: pointer;
   }
-  #characters-images-container h3{
-     align-content: center;
-
-  }
-  .log-form {
-    padding: 10px;
-    width: 300px ;
-    display: flex;
-    flex-direction: column;
-  }
-
   button {
     background-color: blue;
     border: none;
@@ -79,14 +66,12 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 5px;
+    cursor: pointer;
   }
   button.hover{
     color: black;
+    cursor: pointer;
   }
-.cards h3 {
-  font-size: 1.1em;
-  text-align: center;
-}
 .input{
   margin-left: 200px;
   border-radius: 5px;
@@ -94,10 +79,3 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
  }
-footer{
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border:1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
