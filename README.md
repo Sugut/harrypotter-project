@@ -22,18 +22,21 @@ It gives the users various resources for example one can access the following:-
   GET (http://hp-api.herokuapp.com/api/characters)
 
 Parameter	  Type	    Description
+
 api_key	     string	    No. API key
 
 ### Get students
   GET (http://hp-api.herokuapp.com/api/characters/students)
 
 Parameter   	Type	    Description
+
 id	           string	   Required. Id of item to fetch
 
 ### Get staff members
   GET (http://hp-api.herokuapp.com/api/characters/staff)
 
 Parameter	   Type	        Description
+
 id         	  string	    Required. Id of item to fetch
 
 ## Contributing
