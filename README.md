@@ -17,6 +17,10 @@ It gives the users various resources for example one can access the following:-
 
 5.The images of their favourite characters.
 
+6.Can write a comment.
+
+7.Can delete the submitted comment.
+
 ## API Reference
 ### Get all characters
   GET (http://hp-api.herokuapp.com/api/characters)
