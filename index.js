@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded",  function (){
     const studentList = document.getElementById("student-list")
     const card=document.getElementById("characters-list")
 
-    // fetching all the characters
+    // fetching all the characters names and images
     fetch(characterUrl)
     .then(response => response.json())
     .then(data=>{data.forEach(user => user.name = renderImages(user))})
@@ -18,8 +18,10 @@ document.addEventListener("DOMContentLoaded",  function (){
         card.append(image)
         card.append(li)
         card.style.display="none"
+
+        // added a click eventListener
         const charBtn= document.getElementById("character-click")
-        charBtn.addEventListener("click", handleCharacters)
+        charBtn.addEventListener("click", handleCharacters)             
       }
     //  hide and seek with character button
     let charList = true
