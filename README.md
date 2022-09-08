@@ -7,11 +7,11 @@ These have been rendered from a publicly available API (https://hp-api.herokuapp
 
 It gives the users various resources for example one can access the following:-
 
-1.Tittle
+1.Title
 
 2.All of the characters.
 
-3.All the characters who are students at Hogwart's School.
+3.Students at Hogwart's School.
 
 4.The Hogwart's staff members.
 
