@@ -57,14 +57,16 @@ here is my github link (https://github.com/Sugut)
 Here's a brief intro about what a developer must do in order to start developing the project further:
 
 git clone (git@github.com:Sugut/harrypotter-project.git) 
+
 cd harrypotter-project/
+
 You will be using the [json-server][] package to mock the external APIs.
+
 [json-server]: https://github.com/typicode/json-server
 
 ## License
 See the License in (LICENSE.md) to get
 
-## Screenshots
 
 
 
