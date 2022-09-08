@@ -39,7 +39,7 @@ id         	  string	    Required. Id of item to fetch
 ## Contributing
 Contributions are always welcome!
 
-See [](contributing.md) for ways to get started.
+See (contributing.md) for ways to get started.
 
 Please adhere to this project's code of conduct.
 
@@ -59,7 +59,7 @@ You will be using the [json-server][] package to mock the external APIs.
 [json-server]: https://github.com/typicode/json-server
 
 ## License
-See the License in [](LICENSE.md) to get
+See the License in (LICENSE.md) to get
 
 ## Screenshots
 
