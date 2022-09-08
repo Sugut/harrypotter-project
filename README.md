@@ -60,9 +60,7 @@ git clone (git@github.com:Sugut/harrypotter-project.git)
 
 cd harrypotter-project/
 
-You will be using the [json-server][] package to mock the external APIs.
-
-[json-server]: https://github.com/typicode/json-server
+You will be using the [json-server][] package to mock the external APIs.[json-server]: https://github.com/typicode/json-server
 
 ## License
 See the License in (LICENSE.md) to get
