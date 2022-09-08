@@ -1,7 +1,7 @@
 # harrypotter-project
 
 ## Project Description
-This project is a single web page that gives vivid description of the fantacy novel and movie Harry Potter.
+This project is a single web page that gives vivid description of the fantasy novel and movie Harry Potter.
 
 These have been rendered from a publicly available API (https://hp-api.herokuapp.com/)
 
@@ -47,9 +47,9 @@ See (contributing.md) for ways to get started.
 Please adhere to this project's code of conduct.
 
 ### 🚀 About Me
-I'm a junior developer...
-
 Hi, I'm Sugut! 👋
+
+I'm a junior developer...
 
 here is my github link (https://github.com/Sugut)
 
