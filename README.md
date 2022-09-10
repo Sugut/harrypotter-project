@@ -21,6 +21,8 @@ It gives the users various resources for example one can access the following:-
 
 7.Can delete the submitted comment.
 
+8.A changing background image upon refreshing the page
+
 ## API Reference
 ### Get all characters
   GET (http://hp-api.herokuapp.com/api/characters)
