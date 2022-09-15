@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded",  function (){
-    const characterUrl= 'http://hp-api.herokuapp.com/api/characters'
-    const hogwartStudentsUrl='http://hp-api.herokuapp.com/api/characters/students'
-    const hogwartStaffUrl='http://hp-api.herokuapp.com/api/characters/staff'
+    const characterUrl= 'https://hp-api.herokuapp.com/api/characters'
+    const hogwartStudentsUrl='https://hp-api.herokuapp.com/api/characters/students'
+    const hogwartStaffUrl='https://hp-api.herokuapp.com/api/characters/staff'
     const ul = document.getElementById('staff-list')
     const studentList = document.getElementById("student-list")
     const card=document.getElementById("characters-list")
